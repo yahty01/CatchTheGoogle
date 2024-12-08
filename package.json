@@ -1,19 +1,26 @@
 {
-  "name": "js-game",
+  "name": "lesson1",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/yahty01/js-games.git"
-  },
-  "author": "yahty",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yahty01/js-games/issues"
   },
-  "homepage": "https://github.com/yahty01/js-games#readme"
+    "dependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "homepage": "https://github.com/yahty01/js-games#readme",
+  "jest": {
+    "transform": {
+      "^.+\\.[tj]sx?$": "babel-jest"
+    }
+  }
 }

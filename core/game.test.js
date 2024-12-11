@@ -19,7 +19,7 @@ describe('game', () => {
     it('google should be in the Grid after start', async () => {
         const numberUtil = new ShogunNumberUtility()
 
-        for(let i=0; i < 100; i++) {
+        for (let i = 0; i < 100; i++) {
             const game = new Game(numberUtil)
             expect(game.googlePosition).toBeNull();
             await game.start()

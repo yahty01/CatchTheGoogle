@@ -1,6 +1,6 @@
 import {GameStatuses} from "./game-statuses";
 
-export class Game  {
+export class Game {
     #status = GameStatuses.SETTINGS
     #googlePosition = null
 

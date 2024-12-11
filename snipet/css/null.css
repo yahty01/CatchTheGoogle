@@ -78,3 +78,15 @@ body {
     margin: 0;
     height: 100vh;
 }
+
+n {
+    font-family: 'Roboto', serif;
+    color: #FFF;
+    line-height: 24px;
+    min-height: 100%;
+    background: url('../img/background.png') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+}
+

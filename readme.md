@@ -14,5 +14,5 @@ class Settings {
 - constructore() {
 -   this.GridSettings = new GridSettings();
 
-
-test commit
+### UML Entity Map 
+![img.png](assets/readmeImage/img.png)

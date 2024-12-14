@@ -3,6 +3,20 @@ import {GameStatuses} from "./game-statuses";
 import {ShogunNumberUtility} from "./shogun-number-utility";
 
 describe('game', () => {
+    // it('should start game', async () => {
+    //     const numberUtil = new ShogunNumberUtility()
+    //     const game = new Game(numberUtil);
+    //     await game.start();
+    //     expect(game.status).toBe(GameStatuses.IN_PROGRESS);
+    // });
+
+    // it('should start game', async () => {
+    //     const numberUtil = new ShogunNumberUtility()
+    //     const game = new Game(numberUtil);
+    //     await game.start();
+    //     expect(game.status).toBe(GameStatuses.IN_PROGRESS);
+    // });
+
     it('game should be created and return status', () => {
         const numberUtil = new ShogunNumberUtility()
         const game = new Game(numberUtil)
@@ -12,6 +26,7 @@ describe('game', () => {
     it('game should be created and return status', async () => {
         const numberUtil = new ShogunNumberUtility()
         const game = new Game(numberUtil)
+        expect(game.status).toBe(GameStatuses.SETTINGS);
         await game.start();
         expect(game.status).toBe(GameStatuses.IN_PROGRESS);
     })
